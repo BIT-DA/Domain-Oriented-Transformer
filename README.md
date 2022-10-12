@@ -14,6 +14,12 @@ Official implementation of our ACM MM 2022 paper "Making the Best of Both Worlds
 
 Code is coming soon.
 
+## Framework Overview
+
+In this work, we propose a new UDA paradigm that simultaneously learns multiple feature embedding spaces with different specification. The comparison between our new paradigm and the classical ones is shown in the figure.
+
+<img src="resources/paradigm_comparison.png" width=50% height=50%>
+
 ## Contact
 
 If you have any questions about our code, feel free to contact us or describe your problem in [Issues](https://github.com/BIT-DA/SePiCo/issues/new).
