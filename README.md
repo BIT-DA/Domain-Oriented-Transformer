@@ -18,7 +18,7 @@ Code is coming soon.
 
 In this work, we propose a new UDA paradigm that simultaneously learns multiple feature embedding spaces with different specification. The comparison between our new paradigm and the classical ones is shown in the figure.
 
-<img src="resources/paradigm_comparison.png" width=50% height=50%>
+<img src="resources/paradigm_comparison.png" width=100% height=100%>
 
 ## Contact
 
