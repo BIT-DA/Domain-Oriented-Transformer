@@ -18,7 +18,7 @@ Code is coming soon.
 
 If you have any questions about our code, feel free to contact us or describe your problem in [Issues](https://github.com/BIT-DA/SePiCo/issues/new).
 
-Email address: wenxuanma@bit.edu.cn; jinmingzhang@bit.edu.cn.
+Email address: wenxuanma@bit.edu.cn; jinming-zhang@bit.edu.cn.
 
 <div align="right">
 <b><a href="#overview">↥</a></b>
