@@ -125,11 +125,11 @@ def train(args):
     if args.model == 'vit_small':
         model = create_model("vit_small_patch16_224", pretrained=False, num_classes=args.class_num
         )
-        pretrained_model = './pretrained/deit_small_distilled_patch16_224.pth' # we adopt the distilled version for better performance
+        pretrained_model = './pretrained/deit_small_distilled_patch16_224-649709d9.pth' # we adopt the distilled version for better performance
     elif args.model == 'vit_base':
         model = create_model("vit_base_patch16_224", pretrained=False, num_classes=args.class_num
         )
-        pretrained_model = './pretrained/deit_base_distilled_patch16_224.pth'
+        pretrained_model = './pretrained/deit_base_distilled_patch16_224-df68dfff.pth'
     pretrained = torch.load(pretrained_model)
     del pretrained['head.weight'], pretrained['head.bias']
     del pretrained['head_dist.weight'], pretrained['head_dist.bias'] # since pretrained model has an additional head

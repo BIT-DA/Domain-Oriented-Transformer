@@ -28,13 +28,15 @@ VisDA-2017 dataset can be download from [here](http://ai.bu.edu/visda-2017/).
 ### DomainNet
 DomainNet dataset can be download from [here](http://ai.bu.edu/M3SDA/).
 
-When finish downloading, please modify the corresponding data lists in ./data/ to match your data root.
+When finish downloading, please modify the corresponding data lists in "./data/" to match your data root.
 
 ## Training DOT for Unsupervised Domain Adaptation
 
 ### Source Model
 
-A source model is trained to generate initial pseudo-labels for DOT training. The source model can be downloaded here:
+First, download the ImageNet-1k pretrained [vit_small](https://dl.fbaipublicfiles.com/deit/deit_small_distilled_patch16_224-649709d9.pth) and [vit_base](https://dl.fbaipublicfiles.com/deit/deit_base_distilled_patch16_224-df68dfff.pth) model, and put them under the "./pretrained/" directory.
+
+Next, a source model is trained to generate initial pseudo-labels for DOT training. The source model can be downloaded [here](https://github.com/BIT-DA/Domain-Oriented-Transformer/releases).
 
 Or you can run the following command to train the source model by yourself: 
 ```python
@@ -51,10 +53,10 @@ Run the following command to train a DOT model.
 
 ```python
 # Office-Home [0,1,2,3]->[Ar,Cl,Pr,Rw]
-python train_DOT.py --dset home --s 0 --t 1 --model dot_small --output_dir output  --src_model_path [YOUR_SOURCE_MODEL_ROOT] --seed 2022 --gpu_id 0
+python train_DOT.py --dset home --s 0 --t 1 --model dot_small --output_dir output  --src_model_path [YOUR_SOURCE_MODEL_DIR] --seed 2022 --gpu_id 0
 
 # VisDA2017 [0,1]->[Synthetic,Real]
-python train_DOT.py --dset visda2017 --s 0 --t 1 --model dot_small --output_dir output  --src_model_path [YOUR_SOURCE_MODEL_ROOT] iter_per_epoch 1000 --lr 1e-3 --seed 2022 --gpu_id 0
+python train_DOT.py --dset visda2017 --s 0 --t 1 --model dot_small --output_dir output  --src_model_path [YOUR_SOURCE_MODEL_DIR] iter_per_epoch 1000 --lr 1e-3 --seed 2022 --gpu_id 0
 ```
 
 ## Acknowledgement

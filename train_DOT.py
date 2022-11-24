@@ -145,11 +145,11 @@ def train(args):
     if args.model=='dot_small':
         print('[[ Backbone: dot_small ]]')
         model = create_model("dot_small_patch16_224", pretrained=False, num_classes=args.class_num)
-        pretrained_model = './pretrained/deit_small_distilled_patch16_224.pth'
+        pretrained_model = './pretrained/deit_small_distilled_patch16_224-649709d9.pth'
     elif args.model=='dot_base':
         print('[[ Backbone: dot_base ]]')
         model = create_model("dot_base_patch16_224", pretrained=False, num_classes=args.class_num)
-        pretrained_model = './pretrained/deit_base_distilled_patch16_224.pth'
+        pretrained_model = './pretrained/deit_base_distilled_patch16_224-df68dfff.pth'
     
     print('Initializing with Deit IN-1k pretrained model.')
     pretrained = torch.load(pretrained_model)
