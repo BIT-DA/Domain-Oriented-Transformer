@@ -311,7 +311,7 @@ if __name__ == "__main__":
     parser.add_argument('--model', type=str, default='dot_small', choices=['dot_small', 'dot_base'])
    
     parser.add_argument('--output_dir', type=str, default='output')
-    parser.add_argument('--dataset_path', type=str, default='data')
+    parser.add_argument('--dataset_path', type=str, default='./data/')
     parser.add_argument("--src_model_path", type=str, default="source_model")
     
     parser.add_argument('--cons_par', type=float, default=1.0)

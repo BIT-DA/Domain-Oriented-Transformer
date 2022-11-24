@@ -247,14 +247,14 @@ if __name__ == "__main__":
     parser.add_argument('--batch_size', type=int, default=32, help="batch_size")
     parser.add_argument('--worker', type=int, default=8, help="number of workers")
     parser.add_argument('--dset', type=str, default='home', choices=['visda2017', 'home', 'domainnet'])
-    parser.add_argument('--lr', type=float, default=1e-2, help="learning rate")
+    parser.add_argument('--lr', type=float, default=3e-4, help="learning rate")
     parser.add_argument('--tentimes', default=False, action="store_true", help="whether 10x learning rate for head")
     parser.add_argument('--weight_decay', type=float, default=1e-3, help="weight decay")
     parser.add_argument('--seed', type=int, default=2022, help="random seed")
 
     parser.add_argument('--output_src', type=str, default='source_model')
-    parser.add_argument('--model', type=str, default='vit_small', choices=['vit_small, vit_base'])
-    parser.add_argument('--dataset_path', type=str, default='data')
+    parser.add_argument('--model', type=str, default='vit_small', choices=['vit_small', 'vit_base'])
+    parser.add_argument('--dataset_path', type=str, default='./data/')
     parser.add_argument('--save', default=False, action="store_true")
 
     # Augmentation parameters

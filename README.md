@@ -53,10 +53,10 @@ Run the following command to train a DOT model.
 
 ```python
 # Office-Home [0,1,2,3]->[Ar,Cl,Pr,Rw]
-python train_DOT.py --dset home --s 0 --t 1 --model dot_small --output_dir output  --src_model_path [YOUR_SOURCE_MODEL_DIR] --seed 2022 --gpu_id 0
+python train_DOT.py --dset home --s 0 --t 1 --model dot_small --output_dir output  --src_model_path [YOUR_SOURCE_MODEL_ROOT] --seed 2022 --gpu_id 0
 
 # VisDA2017 [0,1]->[Synthetic,Real]
-python train_DOT.py --dset visda2017 --s 0 --t 1 --model dot_small --output_dir output  --src_model_path [YOUR_SOURCE_MODEL_DIR] iter_per_epoch 1000 --lr 1e-3 --seed 2022 --gpu_id 0
+python train_DOT.py --dset visda2017 --s 0 --t 1 --model dot_small --output_dir output  --src_model_path [YOUR_SOURCE_MODEL_ROOT] iter_per_epoch 1000 --lr 1e-3 --seed 2022 --gpu_id 0
 ```
 
 ## Acknowledgement
